@@ -18,7 +18,7 @@
             height="30"
         />
     </a>
-    <a href="https://micartey.github.io/Cardinal-Anticheat/documentation" target="_blank">
+    <a href="https://cardinalanticheat.github.io/addon-api/docs" target="_blank">
         <img
             src="https://img.shields.io/badge/javadoc-reference-5272B4.svg?style=for-the-badge"
             height="30"
@@ -28,10 +28,11 @@
 
 ## Addons
 
-1. First things first, download the `Extension.jar` from the  [**dependencies**](https://github.com/Clientastisch/Cardinal-Anticheat/tree/master/dependencies)
-2. Add `Extension.jar` as your dependency. It's **only** a placeholder and does **not** belong inside your `plugins` folder
-3. Instead of `extends JavaPlugin` you have to `implement Addon` which requires two methods:
+To get started, add this repository to your dependencies using [Jitpack.io](https://jitpack.io/#cardinalanticheat/addon-api/master-SNAPSHOT).
+Make sure to **NOT** export the source into your addon but use *compileOnly* for gradle and *provided* for maven.
 
+1. After adding the addon api as a dependency, start by implementing `Addon`.
+ 
 ```java
 import me.clientastisch.extension.Extension;
 import me.clientastisch.extension.impl.Addon;
@@ -50,7 +51,7 @@ public class Core implements Addon {
 }
 ```
 
-4. Unlike spigot, a file called `addon.json` must be created like following:
+2. Unlike spigot, a file called `addon.json` must be created like following:
 
 ```json
 {
@@ -61,12 +62,12 @@ public class Core implements Addon {
 }
 ```
 
-5. Export your addon to `plugins//CAC//addons`
-6. Reload your server or use `/cac addon load <addon>` and you're done!
+3. Export your addon to `plugins//CAC//addons`
+4. Reload your server or use `/cac addon load <addon>` and you're done!
 
 ## Events
 
-As you already know, you have to implement `Listener` in a class you want to use BukkitEvents. In case you also want to use the build-in [**events**](https://micartey.github.io/Cardinal-Anticheat/documentation/documentation/me/clientastisch/events/event/Event.html) of the Cardinal-Anticheat you have to implement `EventListener`. That's because Cardinal-Anticheat has an entire different event-system. It's possible to use BukkitEvents and CardinalEvents in the same class by implementing both classes. However, I do not recomment that, due to the performance lose on startup.
+As you already know, you have to implement `Listener` in a class you want to use BukkitEvents. In case you also want to use the build-in [**events**](https://cardinalanticheat.github.io/addon-api/docs/me/clientastisch/events/event/Event.html) of the Cardinal-Anticheat you have to implement `EventListener`. That's because Cardinal-Anticheat has an entire different event-system. It's possible to use BukkitEvents and CardinalEvents in the same class by implementing both classes. However, I do not recomment that, due to the performance lose on startup.
 
 ```java
 import me.clientastisch.extension.impl.event.EventListener;
@@ -145,4 +146,4 @@ public class Core implements Addon {
 
 ## Why use addons
 
-Addons are supported for every Spigot version on which Cardinal-Anticheat is supported too. This gives you the ability to create multiversion extensions. Futhermore, you get access to a [**bunch of events**](https://micartey.github.io/Cardinal-Anticheat/documentation/documentation/allclasses-noframe.html) which are either packet or spigot based. You also get access to some [**player-data**](https://micartey.github.io/Cardinal-Anticheat/documentation/documentation/me/clientastisch/controller/PlayerController.html) collected by the anticheat which gives you some additional information which spigot doesn't provide on its own.
+Addons are supported for every Spigot version on which Cardinal-Anticheat is supported too. This gives you the ability to create multiversion extensions. Futhermore, you get access to a [**bunch of events**](https://cardinalanticheat.github.io/addon-api/docs/allclasses.html) which are either packet or spigot based. You also get access to some [**player-data**](https://cardinalanticheat.github.io/addon-api/docs/me/clientastisch/controller/PlayerController.html) collected by the anticheat which gives you some additional information which spigot doesn't provide on its own.
