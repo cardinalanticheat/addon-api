@@ -1,6 +1,3 @@
-
-# Cardinal-Anticheat Addons
-
 <div align="center">
     <img src="https://raw.githubusercontent.com/micartey/Cardinal-Anticheat/master/images/banner.png" />
 </div>
