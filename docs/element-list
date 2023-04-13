@@ -1,5 +1,6 @@
 me.clientastisch.checks
 me.clientastisch.controller
+me.clientastisch.controller.processor
 me.clientastisch.core
 me.clientastisch.events
 me.clientastisch.events.event
