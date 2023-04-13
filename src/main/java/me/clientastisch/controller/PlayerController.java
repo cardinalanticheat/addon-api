@@ -1,5 +1,7 @@
 package me.clientastisch.controller;
 
+import me.clientastisch.controller.processor.SensitivityProcessor;
+
 /**
  * @author Clientastisch
  * @since CAC v. 0.9945
@@ -78,6 +80,15 @@ public abstract class PlayerController {
      * @return network data of the player
      */
     public abstract PlayerNetwork getNetwork();
+
+    /**
+     * Returns the sensitvitity processor of the player
+     *
+     * @see SensitivityProcessor
+     * @return mouse sensitivity processor
+     * @since 2.3.3
+     */
+    public abstract SensitivityProcessor getSensitivityProcessor();
 
     /**
      * Returns the PlayerController of a player
