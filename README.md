@@ -62,9 +62,9 @@ public class Core implements Addon {
 3. Export your addon to `plugins//CAC//addons`
 4. Reload your server or use `/cac addon load <addon>` and you're done!
 
-## Events
+### Events
 
-As you already know, you have to implement `Listener` in a class you want to use BukkitEvents. In case you also want to use the build-in [**events**](https://cardinalanticheat.github.io/addon-api/docs/me/clientastisch/events/event/Event.html) of the Cardinal-Anticheat you have to implement `EventListener`. That's because Cardinal-Anticheat has an entire different event-system. It's possible to use BukkitEvents and CardinalEvents in the same class by implementing both classes. However, I do not recomment that, due to the performance lose on startup.
+As you already know, you have to implement `Listener` in a class you want to use BukkitEvents. In case you also want to use the build-in [**events**](https://cardinalanticheat.github.io/addon-api/docs/me/clientastisch/events/event/Event.html) of the Cardinal-Anticheat you have to implement `EventListener`. That's because Cardinal-Anticheat has an entire different event-system. It's possible to use BukkitEvents and CardinalEvents in the same class by implementing both classes.
 
 ```java
 import me.clientastisch.extension.impl.event.EventListener;
@@ -102,7 +102,7 @@ public void onFlag(CheckFireEvent event) {
 
 Keep in mind, that asynchronous events **cannot** be `cancelled`. Therefore set `isSync` to `true`.
 
-## Commands
+### Commands
 
 To handle commands you have to implement `Command`
 
@@ -118,7 +118,7 @@ In case your command matches `return true`
 
 
 
-## Register events and commands
+### Register events and commands
 
 You can register events and commands by accessing `Extension`.
 
@@ -141,6 +141,32 @@ public class Core implements Addon {
 }
 ```
 
-## Why use addons
+## Dialects
 
-Addons are supported for every Spigot version on which Cardinal-Anticheat is supported too. This gives you the ability to create multiversion extensions. Futhermore, you get access to a [**bunch of events**](https://cardinalanticheat.github.io/addon-api/docs/allclasses.html) which are either packet or spigot based. You also get access to some [**player-data**](https://cardinalanticheat.github.io/addon-api/docs/me/clientastisch/controller/PlayerController.html) collected by the anticheat which gives you some additional information which spigot doesn't provide on its own.
+A dialect is used to abstract the database handling by loading the dialect in form of an addon. Creating your own dialect secures the data usage and guarantees the protection of sensitive data, since Cardinal has neither access to the connection nor to any credentials which are typically required. In addition, this gives you the opportunity to migrate to any form of database you desire.
+
+### Creating a dialect
+
+Creating a dialect requires the implementation of `PunishDialect` and/or `ViolationDialect`. Both of the interfaces are generating required methods for their usage.
+
+### Register a dialect
+
+Registering a dialect is similar to any other event or command you're trying to register. Therefore you need to get the static reference of `Extension` and call the method `registerDialect` with the required arguments.
+
+```java
+import me.clientastisch.extension.Extension;
+import me.clientastisch.extension.impl.Addon;
+
+public class Core implements Addon {
+
+    @Override
+    public void onEnable() throws Exception {
+        Extension.registerDialect(this, new Punishment());
+        Extension.registerDialect(this, new Violation());
+    }
+
+    @Override
+    public void onDisable() throws Exception {
+
+    }
+}
