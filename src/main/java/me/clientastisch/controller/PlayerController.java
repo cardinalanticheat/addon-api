@@ -100,17 +100,6 @@ public abstract class PlayerController {
      */
     public abstract PlayerTraffic getTraffic();
 
-
-    /**
-     * Overwrite the tcp packet handler.
-     * Only necessary when server is behind a proxy (e.g. bungeecord)
-     * Make sure to call the {@link PlayerTraffic#destory()} method first
-     *
-     * @param playerTraffic traffic handler
-     * @since 2.5.0
-     */
-    public abstract void setTraffic(PlayerTraffic playerTraffic);
-
     /**
      * Returns the PlayerController of a player
      *

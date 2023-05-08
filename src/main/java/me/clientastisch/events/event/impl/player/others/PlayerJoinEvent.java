@@ -8,8 +8,4 @@ import me.clientastisch.events.event.Event;
  */
 public abstract class PlayerJoinEvent implements Event<PlayerJoinEvent> {
 
-    public abstract void setJoinMessage(String joinMessage);
-
-    public abstract String getJoinMessage();
-
 }
