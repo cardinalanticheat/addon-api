@@ -26,4 +26,12 @@ public abstract class Checks {
      */
     public abstract void punish(Player player, Location location);
 
+    /**
+     * Get the name of a check.
+     * This also contains the type (Type A, B, C, ...)
+     * 
+     * @return Full check name
+     */
+    public abstract String getName();
+
 }
