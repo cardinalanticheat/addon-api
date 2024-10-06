@@ -4,9 +4,9 @@ import me.clientastisch.cardinal.events.event.Event;
 
 /**
  * @author Clientastisch
- * @since CAC v. 0.9958
+ * @since CAC v. 5.0.0
  */
-public abstract class PacketOpenInvEvent implements Event<PacketOpenInvEvent> {
+public abstract class PacketInventoryOpenEvent implements Event<PacketInventoryOpenEvent> {
 
     public abstract Type getType();
 

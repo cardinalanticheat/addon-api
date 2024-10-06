@@ -4,8 +4,8 @@ import me.clientastisch.cardinal.events.event.Event;
 
 /**
  * @author Clientastisch
- * @since CAC v. 0.9958
+ * @since CAC v. 5.0.0
  */
-public abstract class PacketCloseInvEvent implements Event<PacketCloseInvEvent> {
+public abstract class PacketInventoryCloseEvent implements Event<PacketInventoryCloseEvent> {
 
 }

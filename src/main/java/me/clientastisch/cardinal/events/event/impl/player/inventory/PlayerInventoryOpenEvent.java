@@ -6,9 +6,9 @@ import org.bukkit.inventory.InventoryView;
 
 /**
  * @author Clientastisch
- * @since CAC v. 0.9958
+ * @since CAC v. 5.0.0
  */
-public abstract class PlayerCloseInvEvent implements Event<PlayerCloseInvEvent> {
+public abstract class PlayerInventoryOpenEvent implements Event<PlayerInventoryOpenEvent> {
 
     public abstract Inventory getInventory();
 
