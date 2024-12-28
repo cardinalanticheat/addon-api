@@ -14,12 +14,4 @@ public abstract class PacketPlaceEvent implements Event<PacketPlaceEvent> {
 
     public abstract ItemStack getItemStack();
 
-    public abstract float getFacingX();
-
-    public abstract float getFacingY();
-
-    public abstract float getFacingZ();
-
-    public abstract int getActionId();
-
 }
