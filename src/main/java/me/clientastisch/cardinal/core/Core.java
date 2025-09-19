@@ -19,14 +19,5 @@ public class Core {
      * want to register something.
      */
     public final JavaPlugin plugin = null;
-
-    /**
-     * The replayID cannot be changed during a session.
-     * It can't be changed in general and will be generated randomly.
-     *
-     * @return returns the current replay id
-     */
-    public String getReplayID() {
-        return null;
-    }
+    
 }
