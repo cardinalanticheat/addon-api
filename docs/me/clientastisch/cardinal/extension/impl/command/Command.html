@@ -98,7 +98,9 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;command,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&nbsp;args,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;raw)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Implement a command hook that will be executed by cardinal for custom commands.</div>
+</div>
 </div>
 </div>
 </div>
@@ -120,6 +122,17 @@ loadScripts(document, 'script');</script>
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;command,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&nbsp;args,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;raw)</span></div>
+<div class="block">Implement a command hook that will be executed by cardinal for custom commands.
+ Here an example for the parameters when running the command "cac flag"</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>sender</code> - the command sender (player or console)</dd>
+<dd><code>command</code> - the command e.g. "cac"</dd>
+<dd><code>args</code> - array of arguments e.g. ["cac", "flag"]</dd>
+<dd><code>raw</code> - the raw string e.g. "/cac flag"</dd>
+<dt>Returns:</dt>
+<dd>true when the command matches</dd>
+</dl>
 </section>
 </li>
 </ul>
