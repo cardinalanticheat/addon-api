@@ -1,5 +1,11 @@
 pre-commit:
   commands:
+    build:
+      run: |
+        gradle build
+        mv build/libs/Cardinal-Extension.jar addon-api.jar
+        git add addon-api.jar
+
     javadoc:
       run: |
         gradle javadoc
