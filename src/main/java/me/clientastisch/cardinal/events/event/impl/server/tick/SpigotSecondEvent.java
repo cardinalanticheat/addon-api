@@ -1,6 +1,7 @@
 package me.clientastisch.cardinal.events.event.impl.server.tick;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 
 /**
  * Will be called every 1000 milliseconds
@@ -10,6 +11,19 @@ import me.clientastisch.cardinal.events.event.Event;
  */
 public abstract class SpigotSecondEvent implements Event<SpigotSecondEvent> {
 
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
     public abstract long getState();
 
 }

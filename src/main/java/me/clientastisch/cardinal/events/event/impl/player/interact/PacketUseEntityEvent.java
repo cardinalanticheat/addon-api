@@ -1,7 +1,9 @@
 package me.clientastisch.cardinal.events.event.impl.player.interact;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.Location;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.Player;
 
 /**
  * @author Clientastisch
@@ -9,13 +11,51 @@ import org.bukkit.entity.Entity;
  */
 public abstract class PacketUseEntityEvent implements Event<PacketUseEntityEvent> {
 
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
+    public abstract int getEntityId();
+
+    /**
+     *
+     */
+    public abstract Object getFacing();
+
+    /**
+     *
+     */
+    public abstract Location getPlayerLocation();
+
+    /**
+     *
+     */
+    public abstract Location getEntityLocation();
+
+    /**
+     *
+     */
     public abstract Action getCause();
 
+    /**
+     *
+     */
     public abstract Entity getEntity();
 
-    public abstract Integer getEnityId();
+    public enum Action {
 
-    public static enum Action {
-        INTERACT, ATTACK
+        INTERACT,
+        ATTACK;
+
     }
+
 }

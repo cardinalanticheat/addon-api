@@ -1,6 +1,8 @@
 package me.clientastisch.cardinal.events.event.impl.server.others;
 
+import me.clientastisch.cardinal.checks.Checks;
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 
 /**
  * Will be called right before a flag message will be broadcast  <br />
@@ -12,16 +14,44 @@ import me.clientastisch.cardinal.events.event.Event;
  */
 public abstract class CheckFlagEvent implements Event<CheckFlagEvent> {
 
-    public abstract String getCategory();
-
-    public abstract String getCheckName();
-
+    /**
+     *
+     */
     public abstract String getPunishment();
 
+    /**
+     *
+     */
     public abstract boolean isPunishable();
 
+    /**
+     *
+     */
     public abstract boolean isHidden();
 
-    public abstract int getViolation();
+    /**
+     *
+     */
+    public abstract String getCategory();
+
+    /**
+     *
+     */
+    public abstract String getCheckName();
+
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
+    public abstract Checks getCheck();
 
 }

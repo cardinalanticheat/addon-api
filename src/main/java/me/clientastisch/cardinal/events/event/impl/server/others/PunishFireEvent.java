@@ -1,6 +1,9 @@
 package me.clientastisch.cardinal.events.event.impl.server.others;
 
+import me.clientastisch.cardinal.checks.CheckManager;
+import me.clientastisch.cardinal.checks.Checks;
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 
 /**
  * Will be called if a player should be punished because of a flag <br />
@@ -11,10 +14,34 @@ import me.clientastisch.cardinal.events.event.Event;
  */
 public abstract class PunishFireEvent implements Event<PunishFireEvent> {
 
+    /**
+     *
+     */
+    public abstract boolean isInstance(Object check);
+
+    /**
+     *
+     */
     public abstract String getPunishment();
 
+    /**
+     *
+     */
     public abstract String getCategory();
 
+    /**
+     *
+     */
     public abstract String getCheckName();
+
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
+    public abstract Object getPacket();
 
 }

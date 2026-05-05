@@ -14,8 +14,24 @@ import org.bukkit.entity.Player;
  */
 public abstract class NotifyFlagEvent implements Event<NotifyFlagEvent> {
 
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
     public abstract Player getSuspect();
 
+    /**
+     *
+     */
     public abstract Checks getChecks();
-    
+
 }

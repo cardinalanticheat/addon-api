@@ -1,6 +1,7 @@
 package me.clientastisch.cardinal.events.event.impl.player.movement;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
 /**
@@ -9,12 +10,31 @@ import org.bukkit.util.Vector;
  */
 public abstract class PacketVelocityEvent implements Event<PacketVelocityEvent> {
 
+    /**
+     *
+     */
     public abstract Vector getVector();
 
-    public abstract double getVertical();
+    /**
+     *
+     */
+    public abstract Player getPlayer();
 
-    public abstract double getHorizontal();
+    /**
+     *
+     */
+    public abstract Object getPacket();
 
-    public abstract int getEntityID();
+    /**
+     *
+     */
+    public abstract Cause getCause();
+
+    public enum Cause {
+
+        VELOCITY,
+        EXPLOSION;
+
+    }
 
 }

@@ -1,6 +1,7 @@
 package me.clientastisch.cardinal.events.event.impl.player.movement;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 
 /**
  * @author Clientastisch
@@ -8,8 +9,29 @@ import me.clientastisch.cardinal.events.event.Event;
  */
 public abstract class PacketLookEvent implements Event<PacketLookEvent> {
 
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
     public abstract float getYaw();
 
+    /**
+     *
+     */
     public abstract float getPitch();
+
+    /**
+     *
+     */
+    public abstract boolean isOnGround();
 
 }

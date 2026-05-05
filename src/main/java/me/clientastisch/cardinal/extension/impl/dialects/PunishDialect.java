@@ -11,7 +11,6 @@ public interface PunishDialect {
      *
      * @param uniqueId UUID of the player
      * @param reason reason of the punishment
-     * @param replay replay id
      * @param minutes the punish duration
      */
     void punish(String uniqueId, String reason, long minutes);
@@ -39,7 +38,6 @@ public interface PunishDialect {
      * @return the Unix time when the ban expires
      */
     long getExpire(String uniqueId);
-
 
     /**
      * Returns the reason for a punishment

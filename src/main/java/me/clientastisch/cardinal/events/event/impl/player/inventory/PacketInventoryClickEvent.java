@@ -1,6 +1,7 @@
 package me.clientastisch.cardinal.events.event.impl.player.inventory;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 
 /**
  * @author Clientastisch
@@ -8,17 +9,57 @@ import me.clientastisch.cardinal.events.event.Event;
  */
 public abstract class PacketInventoryClickEvent implements Event<PacketInventoryClickEvent> {
 
-    public abstract int getSlot();
+    /**
+     *
+     */
+    public abstract Player getPlayer();
 
-    public abstract int getButton();
+    /**
+     *
+     */
+    public abstract Object getPacket();
 
-    public abstract int getWindowId();
-
-    public abstract int getAction();
-
+    /**
+     *
+     */
     public abstract WindowClickType getClickType();
 
+    /**
+     *
+     */
+    public abstract Object getCarriedItemStack();
+
+    /**
+     *
+     */
+    public abstract int getSlot();
+
+    /**
+     *
+     */
+    public abstract int getButton();
+
+    /**
+     *
+     */
+    public abstract int getWindowId();
+
+    /**
+     *
+     */
+    public abstract int getAction();
+
     public enum WindowClickType {
-            PICKUP, QUICK_MOVE, SWAP, CLONE, THROW, QUICK_CRAFT, PICKUP_ALL, NULL;
+
+        PICKUP,
+        QUICK_MOVE,
+        SWAP,
+        CLONE,
+        THROW,
+        QUICK_CRAFT,
+        PICKUP_ALL,
+        NULL;
+
     }
+
 }

@@ -54,3 +54,11 @@ shadowJar {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
+
+javadoc {
+    destinationDir = file("${project.rootDir}/docs")
+    source = sourceSets.main.allJava
+    classpath = files(sourceSets.main.compileClasspath)
+    options.author = true
+    options.links("https://docs.oracle.com/javase/8/docs/api/")
+}

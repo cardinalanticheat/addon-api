@@ -1,6 +1,8 @@
 package me.clientastisch.cardinal.events.event.impl.player.inventory;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryView;
 
@@ -10,8 +12,29 @@ import org.bukkit.inventory.InventoryView;
  */
 public abstract class PlayerInventoryOpenEvent implements Event<PlayerInventoryOpenEvent> {
 
-    public abstract Inventory getInventory();
+    /**
+     *
+     */
+    public abstract Player getPlayer();
 
-    public abstract InventoryView getInventoryView();
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
+    public abstract InventoryOpenEvent getEvent();
+
+    /**
+     *
+     */
+    public abstract Object getInventoryView();
+
+    /**
+     *
+     */
+    public abstract Object getInventory();
 
 }

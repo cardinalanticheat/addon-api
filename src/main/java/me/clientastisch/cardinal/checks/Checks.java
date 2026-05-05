@@ -10,28 +10,12 @@ import org.bukkit.entity.Player;
 public abstract class Checks {
 
     /**
-     * Throws a flag message for each stuff who has alerts enabled
+     * Trigger a flag / alert for a suspected player.
+     * It does not necessarily flag as it can be cancled, hidden, ...
      *
-     * @param player suspected player
-     * @param information short information for the flag
+     * @param player suspect
+     * @param value  flag information
      */
-    public abstract void flag(Player player, String information);
-
-    /**
-     * Setback a player to a certain location in case if setback is enabled for
-     * the current detection
-     *
-     * @param player suspected player
-     * @param location setback location
-     */
-    public abstract void punish(Player player, Location location);
-
-    /**
-     * Get the name of a check.
-     * This also contains the type (Type A, B, C, ...)
-     * 
-     * @return Full check name
-     */
-    public abstract String getName();
+    public abstract void flag(Player player, String value);
 
 }

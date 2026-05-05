@@ -32,12 +32,4 @@ public interface ViolationDialect {
      */
     List<String> getViolations(String uniqueId);
 
-    /**
-     * Returns all uniqueIds which have
-     * at least one violation stored
-     *
-     * @return List of uniqueId
-     */
-    List<String> getViolations();
-
 }

@@ -6,18 +6,10 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author Clientastisch
  * @since CAC v. 0.9958
  */
-public class Core {
+public abstract class Core extends Object {
 
-    /**
-     * Sometimes it's necessary to be capable of getting
-     * the spigot reference.
-     */
-    public static final Core INSTANCE = null;
+    public static Core INSTANCE;
 
-    /**
-     * The JavaPlugin instance which is necessary if you
-     * want to register something.
-     */
-    public final JavaPlugin plugin = null;
-    
+    public JavaPlugin plugin;
+
 }

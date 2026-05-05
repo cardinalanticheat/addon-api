@@ -7,34 +7,16 @@ package me.clientastisch.cardinal.controller;
 public abstract class PlayerNetwork {
 
     /**
-     * Returns the current ping of the player
+     * Get the all-time average ping
      *
-     * @return the current ping
-     */
-    public abstract long getCurrentPing();
-
-    /**
-     * Returns the whole network delay.
-     * That means how long a server request takes to
-     * be send back to the server itself
-     *
-     * @return the network delay
-     */
-    public abstract long getNetworkDelay();
-
-    /**
-     * Returns the average ping of all network samples
-     *
-     * @return the average ping
+     * @return ping
      */
     public abstract long getAveragePing();
 
     /**
-     * Returns the average ping of an amount
-     * of network samples
+     * Get the all-time average ping
      *
-     * @param length the amount of samples
-     * @return the average of <strong>length</strong> samples
+     * @return ping
      */
     public abstract long getAveragePing(int length);
 

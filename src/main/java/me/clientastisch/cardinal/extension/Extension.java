@@ -1,5 +1,6 @@
 package me.clientastisch.cardinal.extension;
 
+import java.util.List;
 import me.clientastisch.cardinal.extension.impl.Addon;
 import me.clientastisch.cardinal.extension.impl.command.Command;
 import me.clientastisch.cardinal.extension.impl.dialects.PunishDialect;
@@ -7,100 +8,98 @@ import me.clientastisch.cardinal.extension.impl.dialects.ViolationDialect;
 import me.clientastisch.cardinal.extension.impl.event.EventListener;
 import org.bukkit.event.Listener;
 
-import java.util.List;
-
 /**
  * @author Clientastisch
  * @since CAC v. 0.9945
  */
-public class Extension {
+public abstract class Extension {
 
     /**
-     * @param addon Main-class of the extension
-     * @param listener Anticheat event listener
-     */
-    public static void registerListener(Addon addon, EventListener listener) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param listener Bukkit event listener
-     */
-    public static void registerListener(Addon addon, Listener listener) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param listener Anticheat event listener
-     */
-    public static void unregisterListener(Addon addon, EventListener listener) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param listener Bukkit event listener
-     */
-    public static void unregisterListener(Addon addon, Listener listener) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param command Command listener
-     */
-    public static void registerCommand(Addon addon, Command command) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param command Command listener
-     */
-    public static void unregisterCommand(Addon addon, Command command) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param dialect Database dialect
-     */
-    public static void registerDialect(Addon addon, PunishDialect dialect) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param dialect Database dialect
-     */
-    public static void unregisterDialect(Addon addon, PunishDialect dialect) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param dialect Database dialect
-     */
-    public static void registerDialect(Addon addon, ViolationDialect dialect) {
-    }
-
-    /**
-     * @param addon Main-class of the extension
-     * @param dialect Database dialect
-     */
-    public static void unregisterDialect(Addon addon, ViolationDialect dialect) {
-    }
-
-    /**
-     * Get a list of all loaded addons
+     * Register a cardinal event
      *
-     * @return List of loaded addons
+     * @param addon addon
+     * @param listener event
      */
-    public List<AddonInfo> getAddons() {
-        return null;
-    }
+    public static void registerListener(Addon addon, EventListener listener) {}
 
     /**
-     * Check if a addon is loaded
+     * Unregister a cardinal event
      *
-     * @param addon Name of the addon
-     * @return whether the addon is loaded
+     * @param addon addon
+     * @param listener event
      */
-    public boolean isLoaded(String addon) {
-        return false;
-    }
+    public static void unregisterListener(Addon addon, EventListener listener) {}
+
+    /**
+     * Register a cardinal event
+     *
+     * @param addon addon
+     * @param listener event
+     */
+    public static void registerListener(Addon addon, Listener listener) {}
+
+    /**
+     * Unregister a cardinal event
+     *
+     * @param addon addon
+     * @param listener event
+     */
+    public static void unregisterListener(Addon addon, Listener listener) {}
+
+    /**
+     * Register a bukkit command
+     *
+     * @param addon addon
+     * @param command implementation of command
+     */
+    public static void registerCommand(Addon addon, Command command) {}
+
+    /**
+     * Unregister a bukkit command
+     *
+     * @param addon addon
+     * @param command implementation of command
+     */
+    public static void unregisterCommand(Addon addon, Command command) {}
+
+    /**
+     * Register a punish dialect.
+     *
+     * @param addon addon
+     * @param dialect implementation of punish dialect
+     */
+    public static void registerDialect(Addon addon, PunishDialect dialect) {}
+
+    /**
+     * Unregister a punish dialect.
+     *
+     * @param addon addon
+     * @param dialect implementation of punish dialect
+     */
+    public static void unregisterDialect(Addon addon, PunishDialect dialect) {}
+
+    /**
+     * Register a punish dialect.
+     *
+     * @param addon addon
+     * @param dialect implementation of punish dialect
+     */
+    public static void registerDialect(Addon addon, ViolationDialect dialect) {}
+
+    /**
+     * Unregister a punish dialect.
+     *
+     * @param addon addon
+     * @param dialect implementation of punish dialect
+     */
+    public static void unregisterDialect(Addon addon, ViolationDialect dialect) {}
+
+    /**
+     * Check if an addon is loaded by name
+     *
+     * @param addon addon
+     * @return true if addon could be found and is loaded
+     */
+    public abstract boolean isLoaded(String addon);
+
 }

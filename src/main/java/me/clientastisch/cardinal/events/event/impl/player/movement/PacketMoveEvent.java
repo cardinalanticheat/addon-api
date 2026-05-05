@@ -2,6 +2,7 @@ package me.clientastisch.cardinal.events.event.impl.player.movement;
 
 import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.Location;
+import org.bukkit.entity.Player;
 
 /**
  * @author Clientastisch
@@ -9,22 +10,89 @@ import org.bukkit.Location;
  */
 public abstract class PacketMoveEvent implements Event<PacketMoveEvent> {
 
-    public abstract Location getTo();
+    /**
+     *
+     */
+    public abstract Player getPlayer();
 
+    /**
+     *
+     */
+    public abstract Object getPacket();
+
+    /**
+     *
+     */
+    public abstract void cancelled();
+
+    /**
+     *
+     */
     public abstract Location getFrom();
 
+    /**
+     *
+     */
+    public abstract Location getTo();
+
+    /**
+     *
+     */
+    public abstract boolean isOnGround();
+
+    /**
+     *
+     */
+    public abstract boolean isRotation();
+
+    /**
+     *
+     */
+    public abstract boolean isJump();
+
+    /**
+     *
+     */
+    public abstract boolean isTeleport();
+
+    /**
+     *
+     */
+    public abstract boolean isTeleportFrom();
+
+    /**
+     *
+     */
     public abstract double getDeltaXZ();
 
+    /**
+     *
+     */
     public abstract double getDeltaY();
 
-    public abstract double getDeltaXYZ();
+    /**
+     *
+     */
+    public abstract double getDelta();
 
+    /**
+     *
+     */
     public abstract double getDeltaX();
 
+    /**
+     *
+     */
     public abstract double getDeltaZ();
 
-    public abstract boolean isOnground();
+    /**
+     *
+     */
+    public abstract double getAccelerationY();
 
-    public abstract boolean isOptifine();
+    /**
+     *
+     */
+    public abstract double getAccelerationXZ();
 
 }

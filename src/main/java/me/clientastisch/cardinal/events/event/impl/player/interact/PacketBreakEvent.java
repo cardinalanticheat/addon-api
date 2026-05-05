@@ -1,8 +1,8 @@
 package me.clientastisch.cardinal.events.event.impl.player.interact;
 
-
 import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.Location;
+import org.bukkit.entity.Player;
 
 /**
  * @author Clientastisch
@@ -10,17 +10,54 @@ import org.bukkit.Location;
  */
 public abstract class PacketBreakEvent implements Event<PacketBreakEvent> {
 
-    public abstract Location getBlockLocation();
+    /**
+     *
+     */
+    public abstract Object getPacket();
 
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
     public abstract EnumPlayerDigType getAction();
 
+    /**
+     *
+     */
     public abstract EnumDirection getDirection();
 
-    public static enum EnumPlayerDigType {
-        START_DESTROY_BLOCK, ABORT_DESTROY_BLOCK, STOP_DESTROY_BLOCK, DROP_ALL_ITEMS, DROP_ITEM, RELEASE_USE_ITEM, NULL
+    /**
+     *
+     */
+    public abstract Location getBlockLocation();
+
+    public enum EnumPlayerDigType {
+
+        START_DIGGING,
+        CANCELLED_DIGGING,
+        FINISHED_DIGGING,
+        DROP_ITEM_STACK,
+        DROP_ITEM,
+        RELEASE_USE_ITEM,
+        SWAP_ITEM_WITH_OFFHAND,
+        NULL;
+
     }
 
-    public static enum EnumDirection {
-        UP, DOWN, NORTH, SOUTH, WEST, EAST, NULL
+    public enum EnumDirection {
+
+        UP,
+        DOWN,
+        NORTH,
+        SOUTH,
+        WEST,
+        EAST,
+        NULL;
+
     }
+
 }

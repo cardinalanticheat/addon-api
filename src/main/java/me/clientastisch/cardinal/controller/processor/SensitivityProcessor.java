@@ -7,12 +7,10 @@ package me.clientastisch.cardinal.controller.processor;
 public abstract class SensitivityProcessor {
 
     /**
-     * Get the player mouse sensitivity that the player has
-     * set in the settings in percent.
+     * Get the calculated mouse sensitivity
+     * This value is not constant.
      *
-     * Accuracy to within one percent.
-     *
-     * @return current mouse sensitivity
+     * @return player mouse sensitivity
      */
     public abstract double getSensitivity();
 

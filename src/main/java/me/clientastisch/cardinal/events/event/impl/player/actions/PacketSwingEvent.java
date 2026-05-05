@@ -1,6 +1,7 @@
 package me.clientastisch.cardinal.events.event.impl.player.actions;
 
 import me.clientastisch.cardinal.events.event.Event;
+import org.bukkit.entity.Player;
 
 /**
  * @author Clientastisch
@@ -8,6 +9,14 @@ import me.clientastisch.cardinal.events.event.Event;
  */
 public abstract class PacketSwingEvent implements Event<PacketSwingEvent> {
 
-    public abstract long getDelay();
+    /**
+     *
+     */
+    public abstract Player getPlayer();
+
+    /**
+     *
+     */
+    public abstract Object getPacket();
 
 }

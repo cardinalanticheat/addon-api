@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    javadoc:
+      run: |
+        gradle javadoc
+        git add docs
+      env:
+        JAVADOC_OUTPUT_DIR: ./docs
