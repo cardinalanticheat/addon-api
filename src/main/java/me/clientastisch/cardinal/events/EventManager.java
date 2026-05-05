@@ -10,4 +10,18 @@ import java.lang.annotation.RetentionPolicy;
  */
 public abstract class EventManager {
 
+    @java.lang.annotation.Target(ElementType.METHOD)
+    @Retention
+    public @interface Target {
+
+        Priority priority() default Priority.MEDIUM;
+
+        boolean doAnyways() default false;
+
+        boolean isAsync() default false;
+
+        long delay() default 0;
+
+    }
+
 }
