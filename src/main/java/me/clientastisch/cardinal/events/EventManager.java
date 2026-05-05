@@ -11,7 +11,7 @@ import java.lang.annotation.RetentionPolicy;
 public abstract class EventManager {
 
     @java.lang.annotation.Target(ElementType.METHOD)
-    @Retention
+    @Retention(RetentionPolicy.RUNTIME)
     public @interface Target {
 
         Priority priority() default Priority.MEDIUM;
