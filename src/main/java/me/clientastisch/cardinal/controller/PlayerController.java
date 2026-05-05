@@ -43,6 +43,14 @@ public abstract class PlayerController {
     public abstract void setVerified(boolean verify, Verify state);
 
     /**
+     * Enable or disable flags / alerts for the current player.
+     * Using this method ignores permission.
+     *
+     * @param showingFlags state
+     */
+    public abstract void setShowingFlags(boolean showingFlags);
+
+    /**
      * Get the sensitivity processor
      *
      * @return sensitivity processor

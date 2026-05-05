@@ -156,9 +156,14 @@ loadScripts(document, 'script');</script>
 <div class="block">Get a PlayerController for a bukkit player outside of events.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setVerified(boolean,me.clientastisch.cardinal.controller.PlayerController.Verify)" class="member-name-link">setVerified</a><wbr>(boolean&nbsp;verify,
- <a href="PlayerController.Verify.html" title="enum class in me.clientastisch.cardinal.controller">PlayerController.Verify</a>&nbsp;state)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setShowingFlags(boolean)" class="member-name-link">setShowingFlags</a><wbr>(boolean&nbsp;showingFlags)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Enable or disable flags / alerts for the current player.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#setVerified(boolean,me.clientastisch.cardinal.controller.PlayerController.Verify)" class="member-name-link">setVerified</a><wbr>(boolean&nbsp;verify,
+ <a href="PlayerController.Verify.html" title="enum class in me.clientastisch.cardinal.controller">PlayerController.Verify</a>&nbsp;state)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Verified players are not checked for many things.</div>
 </div>
 </div>
@@ -239,6 +244,18 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>verify</code> - the state</dd>
 <dd><code>state</code> - the type of verification <a href="PlayerController.Verify.html" title="enum class in me.clientastisch.cardinal.controller"><code>PlayerController.Verify</code></a></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="setShowingFlags(boolean)">
+<h3>setShowingFlags</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setShowingFlags</span><wbr><span class="parameters">(boolean&nbsp;showingFlags)</span></div>
+<div class="block">Enable or disable flags / alerts for the current player.
+ Using this method ignores permission.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>showingFlags</code> - state</dd>
 </dl>
 </section>
 </li>
