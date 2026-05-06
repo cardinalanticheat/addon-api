@@ -1,5 +1,5 @@
 # addon api
 
-To get started, please follow the documentation on: 
+How to create an Addon: https://cardinalanticheat.github.io/documentation/how-to/addons/
 
-https://cardinalanticheat.github.io/documentation/how-to/addons/
+JavaDoc Reference: https://cardinalanticheat.github.io/addon-api/docs/
