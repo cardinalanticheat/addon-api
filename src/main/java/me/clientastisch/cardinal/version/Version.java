@@ -45,35 +45,49 @@ public @interface Version {
         }
 
         /**
+         * Check if a version is the current server version
          *
+         * @return true if current server version
          */
         public boolean isCurrentVersion() {
             return false;
         }
 
         /**
+         * Check if a version is newer than a version
          *
+         * @param version to check
+         * @return true if newer
          */
         public boolean isNewerOrEquals(Type version) {
             return false;
         }
 
         /**
+         * Check if two versions are the same
          *
+         * @param version version
+         * @return true if equal
          */
         public boolean isEquals(Type version) {
             return false;
         }
 
         /**
+         * Check if a version is older than a version
          *
+         * @param version to check
+         * @return true if older
          */
         public boolean isOlderOrEquals(Type version) {
             return false;
         }
 
         /**
+         * Get the enum value for the current server version.
+         * This method uses {@link Version.Type#isCurrentVersion}
          *
+         * @return Type
          */
         public static Type getServerVersion() {
             return null;

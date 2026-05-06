@@ -155,19 +155,29 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getServerVersion()" class="member-name-link">getServerVersion</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Get the enum value for the current server version.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isCurrentVersion()" class="member-name-link">isCurrentVersion</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Check if a version is the current server version</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isEquals(me.clientastisch.cardinal.version.Version.Type)" class="member-name-link">isEquals</a><wbr>(<a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a>&nbsp;version)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Check if two versions are the same</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isNewerOrEquals(me.clientastisch.cardinal.version.Version.Type)" class="member-name-link">isNewerOrEquals</a><wbr>(<a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a>&nbsp;version)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Check if a version is newer than a version</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOlderOrEquals(me.clientastisch.cardinal.version.Version.Type)" class="member-name-link">isOlderOrEquals</a><wbr>(<a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a>&nbsp;version)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Check if a version is older than a version</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#valueOf(java.lang.String)" class="member-name-link">valueOf</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -338,30 +348,62 @@ not permitted.)</div>
 <section class="detail" id="isCurrentVersion()">
 <h3>isCurrentVersion</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isCurrentVersion</span>()</div>
+<div class="block">Check if a version is the current server version</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>true if current server version</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isNewerOrEquals(me.clientastisch.cardinal.version.Version.Type)">
 <h3>isNewerOrEquals</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isNewerOrEquals</span><wbr><span class="parameters">(<a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a>&nbsp;version)</span></div>
+<div class="block">Check if a version is newer than a version</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>version</code> - to check</dd>
+<dt>Returns:</dt>
+<dd>true if newer</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isEquals(me.clientastisch.cardinal.version.Version.Type)">
 <h3>isEquals</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isEquals</span><wbr><span class="parameters">(<a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a>&nbsp;version)</span></div>
+<div class="block">Check if two versions are the same</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>version</code> - version</dd>
+<dt>Returns:</dt>
+<dd>true if equal</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="isOlderOrEquals(me.clientastisch.cardinal.version.Version.Type)">
 <h3>isOlderOrEquals</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isOlderOrEquals</span><wbr><span class="parameters">(<a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a>&nbsp;version)</span></div>
+<div class="block">Check if a version is older than a version</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>version</code> - to check</dd>
+<dt>Returns:</dt>
+<dd>true if older</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="getServerVersion()">
 <h3>getServerVersion</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Version.Type.html" title="enum class in me.clientastisch.cardinal.version">Version.Type</a></span>&nbsp;<span class="element-name">getServerVersion</span>()</div>
+<div class="block">Get the enum value for the current server version.
+ This method uses <a href="#isCurrentVersion()"><code>isCurrentVersion()</code></a></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>Type</dd>
+</dl>
 </section>
 </li>
 </ul>
