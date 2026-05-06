@@ -6,50 +6,66 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketUseEntityEvent implements Event<PacketUseEntityEvent> {
+public class PacketUseEntityEvent extends Event<PacketUseEntityEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract int getEntityId();
+    public int getEntityId() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract Object getFacing();
+    public Object getFacing() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Location getPlayerLocation();
+    public Location getPlayerLocation() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Location getEntityLocation();
+    public Location getEntityLocation() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Action getCause();
+    public Action getCause() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Entity getEntity();
+    public Entity getEntity() {
+        return null;
+    }
 
     public enum Action {
 

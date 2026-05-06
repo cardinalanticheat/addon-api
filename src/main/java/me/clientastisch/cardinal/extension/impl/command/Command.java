@@ -3,8 +3,8 @@ package me.clientastisch.cardinal.extension.impl.command;
 import org.bukkit.command.CommandSender;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
 public interface Command {
 
@@ -18,6 +18,6 @@ public interface Command {
      * @param raw the raw string e.g. "/cac flag"
      * @return true when the command matches
      */
-    boolean execute(CommandSender sender, String command, String[] args, String raw);
+    public boolean execute(CommandSender sender, String command, String[] args, String raw);
 
 }

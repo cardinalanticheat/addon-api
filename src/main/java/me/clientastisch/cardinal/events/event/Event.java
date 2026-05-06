@@ -1,57 +1,70 @@
 package me.clientastisch.cardinal.events.event;
 
 import io.netty.channel.Channel;
-import java.util.UUID;
 import java.util.concurrent.ScheduledExecutorService;
 import me.clientastisch.cardinal.controller.PlayerController;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9978
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public interface Event<T extends Event<T>> {
+public abstract class Event<T extends Event<T>> {
 
     /**
      *
      */
-    Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    PlayerController getController();
+    public PlayerController getController() {
+        return null;
+    }
 
     /**
      *
      */
-    Channel getPipeline();
+    public Channel getPipeline() {
+        return null;
+    }
 
     /**
      *
      */
-    boolean isContinue();
+    public boolean isContinue() {
+        return false;
+    }
 
     /**
      *
      */
-    void cancelled();
+    public void cancelled() {}
 
     /**
      * Push the event to the EventManager to publish and propagate it
      *
      * @return instance of event for chained calls
      */
-    T fire();
+    public T fire() {
+        return null;
+    }
 
     /**
      *
      */
-    ScheduledExecutorService getService();
+    public ScheduledExecutorService getService() {
+        return null;
+    }
 
 }

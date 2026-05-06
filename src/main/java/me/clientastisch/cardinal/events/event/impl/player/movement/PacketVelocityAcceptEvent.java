@@ -5,24 +5,30 @@ import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9996
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketVelocityAcceptEvent implements Event<PacketVelocityAcceptEvent> {
+public class PacketVelocityAcceptEvent extends Event<PacketVelocityAcceptEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Vector getVector();
+    public Vector getVector() {
+        return null;
+    }
 
 }

@@ -5,30 +5,38 @@ import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketVelocityEvent implements Event<PacketVelocityEvent> {
+public class PacketVelocityEvent extends Event<PacketVelocityEvent> {
 
     /**
      *
      */
-    public abstract Vector getVector();
+    public Vector getVector() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Cause getCause();
+    public Cause getCause() {
+        return null;
+    }
 
     public enum Cause {
 

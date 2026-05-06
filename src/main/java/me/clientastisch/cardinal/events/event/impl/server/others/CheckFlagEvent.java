@@ -1,57 +1,92 @@
 package me.clientastisch.cardinal.events.event.impl.server.others;
 
+import me.clientastisch.cardinal.checks.CheckType;
 import me.clientastisch.cardinal.checks.Checks;
 import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * Will be called right before a flag message will be broadcast  <br />
- * In case this is cancelled no chat message will be send but the
- * violation level changes
- *
- * @author Clientastisch
- * @since CAC v. 0.9992
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class CheckFlagEvent implements Event<CheckFlagEvent> {
+public class CheckFlagEvent extends Event<CheckFlagEvent> {
 
     /**
      *
      */
-    public abstract String getPunishment();
+    public String getPunishment() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract boolean isPunishable();
+    public boolean isPunishable() {
+        return false;
+    }
 
     /**
      *
      */
-    public abstract boolean isHidden();
+    public boolean isHidden() {
+        return false;
+    }
 
     /**
      *
      */
-    public abstract String getCategory();
+    public CheckType getCategory() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract String getCheckName();
+    public String getCheckName() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Checks getCheck();
+    public void setPlayer(Player player) {}
+
+    /**
+     *
+     */
+    public double getViolation() {
+        return 0D;
+    }
+
+    /**
+     *
+     */
+    public void setViolation(double violation) {}
+
+    /**
+     *
+     */
+    public Checks getCheck() {
+        return null;
+    }
+
+    /**
+     *
+     */
+    public void setCheck(Checks check) {}
 
 }

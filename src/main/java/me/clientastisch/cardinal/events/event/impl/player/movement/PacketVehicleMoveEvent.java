@@ -5,44 +5,58 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketVehicleMoveEvent implements Event<PacketVehicleMoveEvent> {
+public class PacketVehicleMoveEvent extends Event<PacketVehicleMoveEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Location getTo();
+    public Location getTo() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Location getFrom();
+    public Location getFrom() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaY();
+    public double getDeltaY() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaXZ();
+    public double getDeltaXZ() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDelta();
+    public double getDelta() {
+        return 0D;
+    }
 
 }

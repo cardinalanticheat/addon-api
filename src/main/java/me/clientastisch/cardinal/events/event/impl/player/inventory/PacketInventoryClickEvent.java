@@ -4,50 +4,66 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 5.0.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketInventoryClickEvent implements Event<PacketInventoryClickEvent> {
+public class PacketInventoryClickEvent extends Event<PacketInventoryClickEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract WindowClickType getClickType();
+    public WindowClickType getClickType() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getCarriedItemStack();
+    public Object getCarriedItemStack() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract int getSlot();
+    public int getSlot() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract int getButton();
+    public int getButton() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract int getWindowId();
+    public int getWindowId() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract int getAction();
+    public int getAction() {
+        return 0;
+    }
 
     public enum WindowClickType {
 

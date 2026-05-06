@@ -1,17 +1,13 @@
 package me.clientastisch.cardinal.events;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class EventManager {
+public class EventManager {
 
-    @java.lang.annotation.Target(ElementType.METHOD)
-    @Retention(RetentionPolicy.RUNTIME)
+    @java.lang.annotation.Target(java.lang.annotation.ElementType.METHOD)
+    @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
     public @interface Target {
 
         Priority priority() default Priority.MEDIUM;
@@ -21,6 +17,12 @@ public abstract class EventManager {
         boolean isAsync() default false;
 
         long delay() default 0;
+
+    }
+
+    @java.lang.annotation.Target(java.lang.annotation.ElementType.METHOD)
+    @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
+    public @interface Important {
 
     }
 

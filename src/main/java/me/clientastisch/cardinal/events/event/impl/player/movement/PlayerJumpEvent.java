@@ -5,65 +5,87 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PlayerJumpEvent implements Event<PlayerJumpEvent> {
+public class PlayerJumpEvent extends Event<PlayerJumpEvent> {
 
     /**
      *
      */
-    public abstract Location getFrom();
+    public Location getFrom() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Location getTo();
+    public Location getTo() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Type getType();
+    public Type getType() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract double getCurrentRange();
+    public double getCurrentRange() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaXZ();
+    public double getDeltaXZ() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaY();
+    public double getDeltaY() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaXYZ();
+    public double getDeltaXYZ() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaX();
+    public double getDeltaX() {
+        return 0D;
+    }
 
     /**
      *
      */
-    public abstract double getDeltaZ();
+    public double getDeltaZ() {
+        return 0D;
+    }
 
     public enum Type {
 

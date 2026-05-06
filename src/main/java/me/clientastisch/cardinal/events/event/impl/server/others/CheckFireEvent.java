@@ -5,53 +5,72 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * Will be called before a flag gets invoked <br />
- * In case this is cancelled no violation will be stored and the
- * violation level remains unchanged
- *
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class CheckFireEvent implements Event<CheckFireEvent> {
+public class CheckFireEvent extends Event<CheckFireEvent> {
 
     /**
      *
      */
-    public abstract String getPunishment();
+    public String getPunishment() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract boolean isPunishable();
+    public boolean isPunishable() {
+        return false;
+    }
 
     /**
      *
      */
-    public abstract boolean isHidden();
+    public boolean isHidden() {
+        return false;
+    }
 
     /**
      *
      */
-    public abstract String getCategory();
+    public String getCategory() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract String getCheckName();
+    public String getCheckName() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract int getViolation();
+    public int getViolation() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
+
+    /**
+     *
+     */
+    public Checks getCheck() {
+        return null;
+    }
 
 }

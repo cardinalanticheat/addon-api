@@ -1,8 +1,8 @@
 package me.clientastisch.cardinal.extension.impl.dialects;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
 public interface PunishDialect {
 
@@ -13,14 +13,14 @@ public interface PunishDialect {
      * @param reason reason of the punishment
      * @param minutes the punish duration
      */
-    void punish(String uniqueId, String reason, long minutes);
+    public void punish(String uniqueId, String reason, long minutes);
 
     /**
      * Unban a player
      *
      * @param uniqueId UUID of the player
      */
-    void pardon(String uniqueId);
+    public void pardon(String uniqueId);
 
     /**
      * Check if the player is banned
@@ -28,7 +28,7 @@ public interface PunishDialect {
      * @param uniqueId UUID of the player
      * @return whether the player is banned or not
      */
-    boolean isBanned(String uniqueId);
+    public boolean isBanned(String uniqueId);
 
     /**
      * Returns the Unix time when the ban expires
@@ -37,7 +37,7 @@ public interface PunishDialect {
      * @param uniqueId UUID of the player
      * @return the Unix time when the ban expires
      */
-    long getExpire(String uniqueId);
+    public long getExpire(String uniqueId);
 
     /**
      * Returns the reason for a punishment
@@ -45,6 +45,6 @@ public interface PunishDialect {
      * @param uniqueId UUID of the player
      * @return the reason
      */
-    String getReason(String uniqueId);
+    public String getReason(String uniqueId);
 
 }

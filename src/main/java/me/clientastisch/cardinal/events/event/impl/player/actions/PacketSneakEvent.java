@@ -4,24 +4,30 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketSneakEvent implements Event<PacketSneakEvent> {
+public class PacketSneakEvent extends Event<PacketSneakEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract boolean isSneaking();
+    public boolean isSneaking() {
+        return false;
+    }
 
 }

@@ -4,37 +4,46 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.InventoryView;
 
 /**
- * @author Clientastisch
- * @since CAC v. 5.0.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PlayerInventoryOpenEvent implements Event<PlayerInventoryOpenEvent> {
+public class PlayerInventoryOpenEvent extends Event<PlayerInventoryOpenEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract InventoryOpenEvent getEvent();
+    public InventoryOpenEvent getEvent() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getInventoryView();
+    public Object getInventoryView() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getInventory();
+    public Object getInventory() {
+        return null;
+    }
 
 }

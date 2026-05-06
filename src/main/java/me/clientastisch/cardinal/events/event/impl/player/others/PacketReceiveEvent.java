@@ -1,22 +1,27 @@
 package me.clientastisch.cardinal.events.event.impl.player.others;
 
 import me.clientastisch.cardinal.events.event.Event;
+import me.clientastisch.cardinal.events.event.impl.player.others.PacketReceiveEvent;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketReceiveEvent implements Event<PacketReceiveEvent> {
+public class PacketReceiveEvent extends Event<PacketReceiveEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
 }

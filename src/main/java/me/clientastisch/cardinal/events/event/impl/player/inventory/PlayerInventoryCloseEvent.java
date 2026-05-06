@@ -3,32 +3,39 @@ package me.clientastisch.cardinal.events.event.impl.player.inventory;
 import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.InventoryView;
 
 /**
- * @author Clientastisch
- * @since CAC v. 5.0.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PlayerInventoryCloseEvent implements Event<PlayerInventoryCloseEvent> {
+public class PlayerInventoryCloseEvent extends Event<PlayerInventoryCloseEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getInventoryView();
+    public Object getInventoryView() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getInventory();
+    public Object getInventory() {
+        return null;
+    }
 
 }

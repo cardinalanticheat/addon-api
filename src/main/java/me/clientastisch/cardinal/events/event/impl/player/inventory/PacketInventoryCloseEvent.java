@@ -4,19 +4,23 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 5.0.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketInventoryCloseEvent implements Event<PacketInventoryCloseEvent> {
+public class PacketInventoryCloseEvent extends Event<PacketInventoryCloseEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
 }

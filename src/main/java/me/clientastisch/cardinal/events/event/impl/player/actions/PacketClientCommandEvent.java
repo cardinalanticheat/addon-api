@@ -4,25 +4,31 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9996
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketClientCommandEvent implements Event<PacketClientCommandEvent> {
+public class PacketClientCommandEvent extends Event<PacketClientCommandEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract EnumClientCommand getClientCommand();
+    public EnumClientCommand getClientCommand() {
+        return null;
+    }
 
     public enum EnumClientCommand {
 

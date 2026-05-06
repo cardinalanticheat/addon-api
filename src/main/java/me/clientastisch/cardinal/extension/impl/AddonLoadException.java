@@ -1,9 +1,9 @@
 package me.clientastisch.cardinal.extension.impl;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9945
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class AddonLoadException extends RuntimeException {
+public class AddonLoadException extends RuntimeException {
 
 }

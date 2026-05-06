@@ -1,27 +1,33 @@
 package me.clientastisch.cardinal.controller;
 
+import me.clientastisch.cardinal.controller.PlayerController;
+import me.clientastisch.cardinal.controller.PlayerNetwork;
 import me.clientastisch.cardinal.controller.processor.SensitivityProcessor;
 import me.clientastisch.cardinal.version.Version;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9945
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PlayerController {
+public class PlayerController {
 
     /**
      * Get the version of a player based on its packet protocol id.
      *
      * @return Version enum
      */
-    public abstract Version.Type getVersion();
+    public Version.Type getVersion() {
+        return null;
+    }
 
     /**
      * Check if a player is a bedrock player using the floodgate api.
      *
      * @return true if player is on bedrock
      */
-    public abstract boolean isFloodgatePlayer();
+    public boolean isFloodgatePlayer() {
+        return false;
+    }
 
     /**
      * Check if a player is whitelisted / exempt from being detected.
@@ -29,7 +35,17 @@ public abstract class PlayerController {
      *
      * @return true if player shall be ignored
      */
-    public abstract boolean isWhitelisted();
+    public boolean isWhitelisted() {
+        return false;
+    }
+
+    /**
+     * Whitelist a player for a certain amount of time.
+     * If player is already whitelisted, it will not do anything.
+     *
+     * @param time time in millseconds
+     */
+    public void setWhitelistedForMs(long time) {}
 
     /**
      * Verified players are not checked for many things.
@@ -40,7 +56,7 @@ public abstract class PlayerController {
      * @param verify the state
      * @param state the type of verification {@link Verify}
      */
-    public abstract void setVerified(boolean verify, Verify state);
+    public void setVerified(boolean verify, Verify state) {}
 
     /**
      * Enable or disable flags / alerts for the current player.
@@ -48,21 +64,25 @@ public abstract class PlayerController {
      *
      * @param showingFlags state
      */
-    public abstract void setShowingFlags(boolean showingFlags);
+    public void setShowingFlags(boolean showingFlags) {}
 
     /**
      * Get the sensitivity processor
      *
      * @return sensitivity processor
      */
-    public abstract SensitivityProcessor getSensitivityProcessor();
+    public SensitivityProcessor getSensitivityProcessor() {
+        return null;
+    }
 
     /**
      * Get the network processor
      *
      * @return network processor
      */
-    public abstract PlayerNetwork getNetwork();
+    public PlayerNetwork getNetwork() {
+        return null;
+    }
 
     /**
      * Get a PlayerController for a bukkit player outside of events.

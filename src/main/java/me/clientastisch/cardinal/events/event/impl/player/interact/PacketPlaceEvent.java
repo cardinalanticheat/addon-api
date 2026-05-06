@@ -1,49 +1,26 @@
 package me.clientastisch.cardinal.events.event.impl.player.interact;
 
 import me.clientastisch.cardinal.events.event.Event;
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9996
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketPlaceEvent implements Event<PacketPlaceEvent> {
+public class PacketPlaceEvent extends Event<PacketPlaceEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
-
-    /**
-     *
-     */
-    public abstract Object getItemStack();
-
-    /**
-     *
-     */
-    public abstract Location getBlockLocation();
-
-    /**
-     *
-     */
-    public abstract Object getCursorPosition();
-
-    /**
-     *
-     */
-    public abstract Object getFace();
-
-    /**
-     *
-     */
-    public abstract int getActionId();
+    public Player getPlayer() {
+        return null;
+    }
 
 }

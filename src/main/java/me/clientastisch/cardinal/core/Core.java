@@ -3,10 +3,10 @@ package me.clientastisch.cardinal.core;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class Core extends Object {
+public class Core extends Object {
 
     public static Core INSTANCE;
 

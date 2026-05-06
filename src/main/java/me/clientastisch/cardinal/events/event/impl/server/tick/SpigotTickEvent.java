@@ -4,26 +4,30 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * Will be called every 50 milliseconds
- *
- * @author Clientastisch
- * @since CAC v. 3.0.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class SpigotTickEvent implements Event<SpigotTickEvent> {
+public class SpigotTickEvent extends Event<SpigotTickEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract long getState();
+    public long getState() {
+        return 0;
+    }
 
 }

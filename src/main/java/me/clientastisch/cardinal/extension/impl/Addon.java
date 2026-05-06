@@ -1,19 +1,19 @@
 package me.clientastisch.cardinal.extension.impl;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
 public interface Addon {
 
     /**
      * Initialize method of your addon
      */
-    void onEnable();
+    public void onEnable();
 
     /**
      * Terminate method of your addon
      */
-    void onDisable();
+    public void onDisable();
 
 }

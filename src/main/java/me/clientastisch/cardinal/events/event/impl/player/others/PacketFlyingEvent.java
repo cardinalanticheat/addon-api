@@ -1,44 +1,54 @@
 package me.clientastisch.cardinal.events.event.impl.player.others;
 
-import lombok.Getter;
-import me.clientastisch.cardinal.controller.PlayerController;
 import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketFlyingEvent implements Event<PacketFlyingEvent> {
+public class PacketFlyingEvent extends Event<PacketFlyingEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getEvent();
+    public Object getEvent() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract long getDelay();
+    public long getDelay() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract long getLastPacket();
+    public long getLastPacket() {
+        return 0;
+    }
 
     /**
      *
      */
-    public abstract boolean isOnGround();
+    public boolean isOnGround() {
+        return false;
+    }
 
 }

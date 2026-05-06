@@ -1,37 +1,41 @@
 package me.clientastisch.cardinal.events.event.impl.server.others;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import me.clientastisch.cardinal.checks.Checks;
 import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * Will be called for each stuff that will receive a flag message
- *
- * @author Clientastisch
- * @since CAC v. 4.0.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class NotifyFlagEvent implements Event<NotifyFlagEvent> {
+public class NotifyFlagEvent extends Event<NotifyFlagEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getSuspect();
+    public Player getSuspect() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Checks getChecks();
+    public Checks getChecks() {
+        return null;
+    }
 
 }

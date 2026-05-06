@@ -6,29 +6,37 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PlayerInteractEvent implements Event<PlayerInteractEvent> {
+public class PlayerInteractEvent extends Event<PlayerInteractEvent> {
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Block getClickedBlock();
+    public Block getClickedBlock() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Action getAction();
+    public Action getAction() {
+        return null;
+    }
 
 }

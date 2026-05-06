@@ -5,24 +5,30 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class BanFireEvent implements Event<BanFireEvent> {
+public class BanFireEvent extends Event<BanFireEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Checks getCheck();
+    public Checks getCheck() {
+        return null;
+    }
 
 }

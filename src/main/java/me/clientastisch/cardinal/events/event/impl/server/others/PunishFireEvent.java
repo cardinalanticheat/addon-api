@@ -6,42 +6,58 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * Will be called if a player should be punished because of a flag <br />
- * SILENT, SETBACK, DAMAGE, VELOCITY, SLOT, BLINDNESS, ATTACK_CANCEL, DAMAGE_CANCEL, NONE
- *
- * @author Clientastisch
- * @since CAC v. 0.9978
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PunishFireEvent implements Event<PunishFireEvent> {
+public class PunishFireEvent extends Event<PunishFireEvent> {
 
     /**
      *
      */
-    public abstract boolean isInstance(Object check);
+    public boolean isInstance(Object check) {
+        return false;
+    }
 
     /**
      *
      */
-    public abstract String getPunishment();
+    public String getPunishment() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract String getCategory();
+    public String getCategory() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract String getCheckName();
+    public String getCheckName() {
+        return "";
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
+
+    /**
+     *
+     */
+    public Checks getCheck() {
+        return null;
+    }
 
 }

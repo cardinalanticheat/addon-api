@@ -4,34 +4,44 @@ import me.clientastisch.cardinal.events.event.Event;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketLookEvent implements Event<PacketLookEvent> {
+public class PacketLookEvent extends Event<PacketLookEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract float getYaw();
+    public float getYaw() {
+        return 0F;
+    }
 
     /**
      *
      */
-    public abstract float getPitch();
+    public float getPitch() {
+        return 0F;
+    }
 
     /**
      *
      */
-    public abstract boolean isOnGround();
+    public boolean isOnGround() {
+        return false;
+    }
 
 }

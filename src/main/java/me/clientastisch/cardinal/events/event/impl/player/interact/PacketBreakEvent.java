@@ -5,35 +5,45 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9958
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class PacketBreakEvent implements Event<PacketBreakEvent> {
+public class PacketBreakEvent extends Event<PacketBreakEvent> {
 
     /**
      *
      */
-    public abstract Object getPacket();
+    public Object getPacket() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Player getPlayer();
+    public Player getPlayer() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract EnumPlayerDigType getAction();
+    public EnumPlayerDigType getAction() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract EnumDirection getDirection();
+    public EnumDirection getDirection() {
+        return null;
+    }
 
     /**
      *
      */
-    public abstract Location getBlockLocation();
+    public Location getBlockLocation() {
+        return null;
+    }
 
     public enum EnumPlayerDigType {
 

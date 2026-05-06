@@ -1,10 +1,10 @@
 package me.clientastisch.cardinal.controller.processor;
 
 /**
- * @author Clientastisch
- * @since CAC v. 2.3.3
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class SensitivityProcessor {
+public class SensitivityProcessor {
 
     /**
      * Get the calculated mouse sensitivity
@@ -12,6 +12,8 @@ public abstract class SensitivityProcessor {
      *
      * @return player mouse sensitivity
      */
-    public abstract double getSensitivity();
+    public double getSensitivity() {
+        return 0D;
+    }
 
 }

@@ -1,6 +1,5 @@
 package me.clientastisch.cardinal.extension;
 
-import java.util.List;
 import me.clientastisch.cardinal.extension.impl.Addon;
 import me.clientastisch.cardinal.extension.impl.command.Command;
 import me.clientastisch.cardinal.extension.impl.dialects.PunishDialect;
@@ -9,10 +8,10 @@ import me.clientastisch.cardinal.extension.impl.event.EventListener;
 import org.bukkit.event.Listener;
 
 /**
- * @author Clientastisch
- * @since CAC v. 0.9945
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
-public abstract class Extension {
+public class Extension {
 
     /**
      * Register a cardinal event
@@ -100,6 +99,8 @@ public abstract class Extension {
      * @param addon addon
      * @return true if addon could be found and is loaded
      */
-    public abstract boolean isLoaded(String addon);
+    public boolean isLoaded(String addon) {
+        return false;
+    }
 
 }

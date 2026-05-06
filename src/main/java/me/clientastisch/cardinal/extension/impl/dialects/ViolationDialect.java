@@ -3,8 +3,8 @@ package me.clientastisch.cardinal.extension.impl.dialects;
 import java.util.List;
 
 /**
- * @author Clientastisch
- * @since CAC v. 1.0
+ * @author micartey
+ * @since CAC v. 5.4.30
  */
 public interface ViolationDialect {
 
@@ -15,14 +15,14 @@ public interface ViolationDialect {
      * @param uniqueId UUID of the player
      * @param violations List of violations
      */
-    void addViolations(String uniqueId, List<String> violations);
+    public void addViolations(String uniqueId, List<String> violations);
 
     /**
      * Remove violations which have been collected so far
      *
      * @param uniqueId UUID of the player
      */
-    void removeViolations(String uniqueId);
+    public void removeViolations(String uniqueId);
 
     /**
      * Returns a list of collected violations
@@ -30,6 +30,14 @@ public interface ViolationDialect {
      * @param uniqueId UUID of the player
      * @return List of violations
      */
-    List<String> getViolations(String uniqueId);
+    public List<String> getViolations(String uniqueId);
+
+    /**
+     * Returns a list of collected violations
+     *
+     * @param uniqueId UUID of the player
+     * @return List of violations
+     */
+    public List<String> getViolations();
 
 }
