@@ -2,6 +2,7 @@ package me.clientastisch.cardinal.controller;
 
 import me.clientastisch.cardinal.controller.PlayerController;
 import me.clientastisch.cardinal.controller.PlayerNetwork;
+import me.clientastisch.cardinal.controller.processor.MovementProcessor;
 import me.clientastisch.cardinal.controller.processor.SensitivityProcessor;
 import me.clientastisch.cardinal.version.Version;
 
@@ -72,6 +73,16 @@ public class PlayerController {
      * @return sensitivity processor
      */
     public SensitivityProcessor getSensitivityProcessor() {
+        return null;
+    }
+
+    /**
+     * Get the movement processor.
+     * It offers some QoL improvements to handle and work with movement.
+     *
+     * @return movement processor
+     */
+    public MovementProcessor getMovementProcessor() {
         return null;
     }
 

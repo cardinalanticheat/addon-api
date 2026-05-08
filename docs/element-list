@@ -1,5 +1,6 @@
 me.clientastisch.cardinal.checks
 me.clientastisch.cardinal.controller
+me.clientastisch.cardinal.controller.behaviors
 me.clientastisch.cardinal.controller.processor
 me.clientastisch.cardinal.core
 me.clientastisch.cardinal.events
