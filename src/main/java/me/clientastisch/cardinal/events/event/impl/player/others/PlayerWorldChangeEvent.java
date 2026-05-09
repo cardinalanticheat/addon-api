@@ -14,21 +14,21 @@ public class PlayerWorldChangeEvent extends Event<PlayerWorldChangeEvent> {
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public World getWorld() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

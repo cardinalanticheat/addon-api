@@ -19,7 +19,7 @@ public class MovementProcessor {
      * @return enum
      */
     public Walking getWalking() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

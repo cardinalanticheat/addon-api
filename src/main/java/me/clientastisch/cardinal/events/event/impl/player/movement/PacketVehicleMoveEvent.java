@@ -14,28 +14,28 @@ public class PacketVehicleMoveEvent extends Event<PacketVehicleMoveEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Location getTo() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Location getFrom() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**

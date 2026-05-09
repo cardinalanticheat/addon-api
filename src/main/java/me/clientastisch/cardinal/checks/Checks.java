@@ -15,14 +15,18 @@ public abstract class Checks {
      * @param player suspect
      * @param value  flag information
      */
-    public void flag(Player player, String value) {}
+    public void flag(Player player, String value) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Enable or disable a check
      *
      * @param state true if enabled
      */
-    public void setToggle(boolean state) {}
+    public void setToggle(boolean state) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Set the ban type.
@@ -30,7 +34,9 @@ public abstract class Checks {
      *
      * @param banType type
      */
-    public void setBanType(BanType banType) {}
+    public void setBanType(BanType banType) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     public enum BanType {
 

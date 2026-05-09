@@ -15,14 +15,14 @@ public class PacketUseEntityEvent extends Event<PacketUseEntityEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -36,35 +36,35 @@ public class PacketUseEntityEvent extends Event<PacketUseEntityEvent> {
      *
      */
     public Object getFacing() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Location getPlayerLocation() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Location getEntityLocation() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Action getCause() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Entity getEntity() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     public enum Action {

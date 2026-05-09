@@ -14,28 +14,28 @@ public class PacketVelocityEvent extends Event<PacketVelocityEvent> {
      *
      */
     public Vector getVector() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Cause getCause() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     public enum Cause {

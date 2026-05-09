@@ -13,21 +13,21 @@ public class PacketClientCommandEvent extends Event<PacketClientCommandEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public EnumClientCommand getClientCommand() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     public enum EnumClientCommand {

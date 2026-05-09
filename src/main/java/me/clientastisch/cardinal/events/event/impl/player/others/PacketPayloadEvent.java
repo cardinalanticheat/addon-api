@@ -13,28 +13,28 @@ public class PacketPayloadEvent extends Event<PacketPayloadEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public String getChannel() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public String getMessage() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

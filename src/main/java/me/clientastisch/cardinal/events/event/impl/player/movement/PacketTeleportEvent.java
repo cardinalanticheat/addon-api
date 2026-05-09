@@ -14,21 +14,21 @@ public class PacketTeleportEvent extends Event<PacketTeleportEvent> {
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Location getLocation() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

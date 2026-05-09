@@ -90,7 +90,7 @@ public @interface Version {
          * @return Type
          */
         public static Type getServerVersion() {
-            return null;
+            throw new IllegalStateException("Implementation is provided by runtime");
         }
 
     }

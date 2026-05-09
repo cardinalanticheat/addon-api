@@ -14,35 +14,35 @@ public class PacketBreakEvent extends Event<PacketBreakEvent> {
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public EnumPlayerDigType getAction() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public EnumDirection getDirection() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Location getBlockLocation() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     public enum EnumPlayerDigType {

@@ -13,21 +13,21 @@ public class PacketInventoryOpenEvent extends Event<PacketInventoryOpenEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Type getType() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     public enum Type {

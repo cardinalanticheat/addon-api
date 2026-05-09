@@ -19,7 +19,9 @@ public class Extension {
      * @param addon addon
      * @param listener event
      */
-    public static void registerListener(Addon addon, EventListener listener) {}
+    public static void registerListener(Addon addon, EventListener listener) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Unregister a cardinal event
@@ -27,7 +29,9 @@ public class Extension {
      * @param addon addon
      * @param listener event
      */
-    public static void unregisterListener(Addon addon, EventListener listener) {}
+    public static void unregisterListener(Addon addon, EventListener listener) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Register a cardinal event
@@ -35,7 +39,9 @@ public class Extension {
      * @param addon addon
      * @param listener event
      */
-    public static void registerListener(Addon addon, Listener listener) {}
+    public static void registerListener(Addon addon, Listener listener) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Unregister a cardinal event
@@ -43,7 +49,9 @@ public class Extension {
      * @param addon addon
      * @param listener event
      */
-    public static void unregisterListener(Addon addon, Listener listener) {}
+    public static void unregisterListener(Addon addon, Listener listener) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Register a bukkit command
@@ -51,7 +59,9 @@ public class Extension {
      * @param addon addon
      * @param command implementation of command
      */
-    public static void registerCommand(Addon addon, Command command) {}
+    public static void registerCommand(Addon addon, Command command) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Unregister a bukkit command
@@ -59,7 +69,9 @@ public class Extension {
      * @param addon addon
      * @param command implementation of command
      */
-    public static void unregisterCommand(Addon addon, Command command) {}
+    public static void unregisterCommand(Addon addon, Command command) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Register a punish dialect.
@@ -67,7 +79,9 @@ public class Extension {
      * @param addon addon
      * @param dialect implementation of punish dialect
      */
-    public static void registerDialect(Addon addon, PunishDialect dialect) {}
+    public static void registerDialect(Addon addon, PunishDialect dialect) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Unregister a punish dialect.
@@ -75,7 +89,9 @@ public class Extension {
      * @param addon addon
      * @param dialect implementation of punish dialect
      */
-    public static void unregisterDialect(Addon addon, PunishDialect dialect) {}
+    public static void unregisterDialect(Addon addon, PunishDialect dialect) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Register a punish dialect.
@@ -83,7 +99,9 @@ public class Extension {
      * @param addon addon
      * @param dialect implementation of punish dialect
      */
-    public static void registerDialect(Addon addon, ViolationDialect dialect) {}
+    public static void registerDialect(Addon addon, ViolationDialect dialect) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Unregister a punish dialect.
@@ -91,7 +109,9 @@ public class Extension {
      * @param addon addon
      * @param dialect implementation of punish dialect
      */
-    public static void unregisterDialect(Addon addon, ViolationDialect dialect) {}
+    public static void unregisterDialect(Addon addon, ViolationDialect dialect) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Check if an addon is loaded by name

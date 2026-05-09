@@ -15,28 +15,28 @@ public abstract class Event<T extends Event<T>> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public PlayerController getController() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Channel getPipeline() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -49,7 +49,9 @@ public abstract class Event<T extends Event<T>> {
     /**
      *
      */
-    public void cancelled() {}
+    public void cancelled() {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Push the event to the EventManager to publish and propagate it
@@ -57,14 +59,14 @@ public abstract class Event<T extends Event<T>> {
      * @return instance of event for chained calls
      */
     public T fire() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public ScheduledExecutorService getService() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

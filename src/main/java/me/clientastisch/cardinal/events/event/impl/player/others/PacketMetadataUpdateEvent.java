@@ -14,14 +14,14 @@ public class PacketMetadataUpdateEvent extends Event<PacketMetadataUpdateEvent> 
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -35,7 +35,7 @@ public class PacketMetadataUpdateEvent extends Event<PacketMetadataUpdateEvent> 
      *
      */
     public List<Object> getWatchable() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

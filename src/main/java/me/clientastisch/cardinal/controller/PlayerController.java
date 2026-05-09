@@ -18,7 +18,7 @@ public class PlayerController {
      * @return Version enum
      */
     public Version.Type getVersion() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -46,7 +46,9 @@ public class PlayerController {
      *
      * @param time time in millseconds
      */
-    public void setWhitelistedForMs(long time) {}
+    public void setWhitelistedForMs(long time) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Verified players are not checked for many things.
@@ -57,7 +59,9 @@ public class PlayerController {
      * @param verify the state
      * @param state the type of verification {@link Verify}
      */
-    public void setVerified(boolean verify, Verify state) {}
+    public void setVerified(boolean verify, Verify state) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Enable or disable flags / alerts for the current player.
@@ -65,7 +69,9 @@ public class PlayerController {
      *
      * @param showingFlags state
      */
-    public void setShowingFlags(boolean showingFlags) {}
+    public void setShowingFlags(boolean showingFlags) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      * Get the sensitivity processor
@@ -73,7 +79,7 @@ public class PlayerController {
      * @return sensitivity processor
      */
     public SensitivityProcessor getSensitivityProcessor() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -83,7 +89,7 @@ public class PlayerController {
      * @return movement processor
      */
     public MovementProcessor getMovementProcessor() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -92,7 +98,7 @@ public class PlayerController {
      * @return network processor
      */
     public PlayerNetwork getNetwork() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -103,7 +109,7 @@ public class PlayerController {
      * @return Reference of PlayerController for player
      */
     public static PlayerController of(Object player) {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     public enum Verify {

@@ -14,7 +14,7 @@ public class CheckFireEvent extends Event<CheckFireEvent> {
      *
      */
     public String getPunishment() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -35,14 +35,14 @@ public class CheckFireEvent extends Event<CheckFireEvent> {
      *
      */
     public String getCategory() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public String getCheckName() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -56,21 +56,21 @@ public class CheckFireEvent extends Event<CheckFireEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Checks getCheck() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

@@ -14,28 +14,28 @@ public class NotifyFlagEvent extends Event<NotifyFlagEvent> {
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getSuspect() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Checks getChecks() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

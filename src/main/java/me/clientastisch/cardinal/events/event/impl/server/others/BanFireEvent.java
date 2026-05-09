@@ -14,21 +14,21 @@ public class BanFireEvent extends Event<BanFireEvent> {
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Checks getCheck() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

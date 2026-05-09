@@ -13,19 +13,21 @@ public class PacketMoveEvent extends Event<PacketMoveEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
-    public void cancelled() {}
+    public void cancelled() {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
 }

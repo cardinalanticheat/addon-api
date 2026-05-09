@@ -100,7 +100,7 @@ public enum CheckManager {
      * @return Optional of Check if found, else empty optional
      */
     public static Optional<Checks> getByName(String name) {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

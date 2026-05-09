@@ -15,28 +15,28 @@ public class PlayerInteractEvent extends Event<PlayerInteractEvent> {
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Block getClickedBlock() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Action getAction() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
 }

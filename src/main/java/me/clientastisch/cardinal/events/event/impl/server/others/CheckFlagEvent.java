@@ -15,7 +15,7 @@ public class CheckFlagEvent extends Event<CheckFlagEvent> {
      *
      */
     public String getPunishment() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
@@ -36,34 +36,36 @@ public class CheckFlagEvent extends Event<CheckFlagEvent> {
      *
      */
     public CheckType getCategory() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public String getCheckName() {
-        return "";
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
-    public void setPlayer(Player player) {}
+    public void setPlayer(Player player) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
     /**
      *
@@ -75,18 +77,22 @@ public class CheckFlagEvent extends Event<CheckFlagEvent> {
     /**
      *
      */
-    public void setViolation(double violation) {}
-
-    /**
-     *
-     */
-    public Checks getCheck() {
-        return null;
+    public void setViolation(double violation) {
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
-    public void setCheck(Checks check) {}
+    public Checks getCheck() {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
+
+    /**
+     *
+     */
+    public void setCheck(Checks check) {
+        throw new IllegalStateException("Implementation is provided by runtime");
+    }
 
 }

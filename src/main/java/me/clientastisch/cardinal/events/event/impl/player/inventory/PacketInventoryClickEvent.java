@@ -13,28 +13,28 @@ public class PacketInventoryClickEvent extends Event<PacketInventoryClickEvent> 
      *
      */
     public Player getPlayer() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getPacket() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public WindowClickType getClickType() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
      *
      */
     public Object getCarriedItemStack() {
-        return null;
+        throw new IllegalStateException("Implementation is provided by runtime");
     }
 
     /**
