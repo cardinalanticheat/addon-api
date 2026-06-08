@@ -35,13 +35,6 @@ public class PacketUseEntityEvent extends Event<PacketUseEntityEvent> {
     /**
      *
      */
-    public Object getFacing() {
-        throw new IllegalStateException("Implementation is provided by runtime");
-    }
-
-    /**
-     *
-     */
     public Location getPlayerLocation() {
         throw new IllegalStateException("Implementation is provided by runtime");
     }

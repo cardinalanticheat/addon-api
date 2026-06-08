@@ -72,7 +72,15 @@ public enum CheckManager {
         SCAFFOLD_E(null, false),
         SCAFFOLD_F(null, false),
         SCAFFOLD_G(null, false),
-        SCAFFOLD_H(null, false);
+        SCAFFOLD_H(null, false),
+        SCAFFOLD_I(null, false),
+        SCAFFOLD_J(null, false),
+        SCAFFOLD_K(null, false),
+        SCAFFOLD_L(null, false),
+        SCAFFOLD_M(null, false),
+        SCAFFOLD_N(null, false),
+        SCAFFOLD_O(null, false),
+        SCAFFOLD_P(null, false);
 
     private final Class<? extends Checks> clazz;
     private boolean initialize;
