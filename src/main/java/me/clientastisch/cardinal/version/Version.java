@@ -35,6 +35,8 @@ public @interface Version {
         VERSION_1_19(0),
         VERSION_1_20(0),
         VERSION_1_21(0),
+        VERSION_26_1(0),
+        VERSION_26_2(0),
         BEDROCK(0),
         UNDEFINED(0);
 
